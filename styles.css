@@ -1,0 +1,202 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #e2c0a3;
+    height: 155px;
+    padding: 0 30px 0 30px;
+}
+h1 {
+    margin-right: 21.875rem;
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.logo {
+    height: 60%;
+    width: 10%;
+}
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+nav > a {
+    color: #000000;
+    font-size: 20px;
+    text-decoration:none;
+}
+.cta {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(238, 223, 209, 1);
+    font-weight: bold;
+    cursor: pointer;
+    
+
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #eedfd1e6;
+}
+.main_text > h2 {
+    font-size: 36px;
+    text-align: center;
+}
+.main_text > b {
+    font-size: 32px;
+    text-align: justify;
+}
+.main_text {
+    float: right;
+    margin-right: 10.3125rem;
+    margin-top: 80px;
+    text-align: center;
+}
+.main_text > P {
+    text-align: left;
+    font-size: 24px;
+    line-height: 38px;
+}
+.main_photo {
+    width: 30%;
+    height: 30%;
+    margin-left: 3.75rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+}
+
+.education, .experience, .diplom, .achievements {
+    display: flex;
+    width: 45%;
+    min-width: 500px;
+}
+
+.education-text, .experience-text, .diplom-text, .achievements-text {
+    margin-left: 50px;
+}
+.working {
+    background-color: rgba(238, 223, 209, 0.9);
+}
+.working, .services, .publications, .action, h2 {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 20px;
+}
+/* с этой штуковиной сталкиваюсь впервые, понаписал шпаргалок. можно не обращать внимание на них*/
+.accordion {
+    padding: 40px 25%;
+}
+.tab input, .tab-content {
+    display: none;
+}
+.tab {
+font: 0.8rem/1.2; /* Параметры шрифта */
+border: 1px solid #e9eaec; /* Параметры рамки */
+border-radius: 3px; /* Скругляем уголки */
+margin-bottom: 10px; /* Расстояние между пунктами */
+background-color: #fff;
+}
+.tab-title {
+padding: 10px; /* Поля вокруг текста */
+display: block; /* Блочный элемент */
+font-size: 24px;
+text-align: left;
+font-weight: bold; /* Жирное начертание */
+cursor: pointer; /* Вид курсора */
+}
+.tab-title::after {
+content: url(images/add_24dp_50A2DE_FILL0_wght400_GRAD0_opsz24.svg); /* Выводим плюс */
+float: right; /*Размещаем по правому краю */
+font-size: large;
+color: #50a2de;
+}
+.tab-content {
+padding: 10px 20px; /* Поля вокруг текста */
+}
+.tab :checked + .tab-title {
+background-color:  white; /* Цвет фона */
+border-radius: 3px 3px 0 0; /* Скругляем уголки */
+color: black; /* Цвет текста */
+}
+.tab :checked + .tab-title::after {
+content: url(images/close_24dp_50A2DE_FILL0_wght400_GRAD0_opsz24.svg);
+}
+.tab :checked ~ .tab-content {
+display: block; /* Показываем содержимое */
+text-align: left;
+font-size: 20px;
+}
+.publications {
+    background-color: #eedfd1e6;
+}
+.photobank-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 100px;
+}
+.card {
+    width: 20%;
+    border: 2px solid black;
+    border-radius: px;
+    text-align: center;
+    background-color: #e2c0a3;
+    font-size: 60%;
+}
+.card > img {
+    width: 100%;
+}
+/* с формой что-то не то, не могу расставить интервал между полями ввода и как-то не реагирует на flex параметры в css*/
+.action {
+    height: 775px;
+    background-image: url(images/image\ запись.png);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+.application {
+    padding: 50px;
+}
+input {
+    padding-left: 10px;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+input, textarea, .submit {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+textarea {
+    padding-left: 10px;
+    margin: 20px;
+    width: 50%;
+    height: 100px;
+}
+.submit {
+    background-color: #50a2de;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    width: 50%;
+    height: 50px;
+    cursor: pointer;
+}
