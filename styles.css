@@ -33,15 +33,24 @@ nav > a {
     font-size: 20px;
     text-decoration:none;
 }
-.cta {
+a:hover {
+    color: #0793f0;
+    text-decoration: underline;
+}
+.cta, .cta-main {
     width: 120px;
     height: 40px;
     border-radius: 10px;
     background-color: rgba(238, 223, 209, 1);
     font-weight: bold;
     cursor: pointer;
-    
-
+}
+.cta-main {
+    background-color: #e2c0a3;
+}
+.cta:hover, .cta-main:hover {
+    background-color: #50a2de;
+    color: #fff;
 }
 .main {
     display: flex;
@@ -142,6 +151,20 @@ content: url(images/close_24dp_50A2DE_FILL0_wght400_GRAD0_opsz24.svg);
 display: block; /* Показываем содержимое */
 text-align: left;
 font-size: 20px;
+}
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 100px;
+    text-align: left;
+    font-size: 24px;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: #50a2de;
+    width: 100%;
 }
 .publications {
     background-color: #eedfd1e6;
