@@ -152,13 +152,17 @@ display: block; /* Показываем содержимое */
 text-align: left;
 font-size: 20px;
 }
-.services-content {
+
+.services-content { /*просто накидал, пока не правил*/
     display: flex;
     justify-content: space-between;
     gap: 60px;
     padding: 100px;
     text-align: left;
     font-size: 24px;
+}
+.t-container1, .t-container2 { /*были разные по ширине, смог только так поправить*/
+    flex-basis: 100%;
 }
 hr {
     border: none;
@@ -186,7 +190,7 @@ hr {
 .card > img {
     width: 100%;
 }
-/* с формой что-то не то, не могу расставить интервал между полями ввода и как-то не реагирует на flex параметры в css*/
+
 .action {
     height: 775px;
     background-image: url(images/image\ запись.png);
