@@ -28,7 +28,7 @@ header {
 }
 
 h1 {
-    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-size: 28px;
 }
@@ -81,18 +81,34 @@ h1 {
     margin: auto;
 }
 
-nav>div>a {
+/* лучше так, потому что ссылки на странице одинаковые, не стоит их разделять по блокам в таком случае */
+a {
     color: #000000;
     font-size: 22px;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #8a070e;
+    text-decoration: underline;
+    transform: scale(1.05);
+
+}
+
+/* nav>div>a {
+    color: #000000;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.5s;
 }
 
 nav>div>a:hover {
     color: #8a070e;
     text-decoration: underline;
-    font-size: 28px;
-    transition: 0.5;
-}
+    transform: scale(1.05);
+
+} */
 
 
 .cta-main {
@@ -166,7 +182,7 @@ nav>div>a:hover {
     text-align: center;
 }
 
-.main_text>P {
+.main_text>p {
     text-align: left;
     font-size: 24px;
     line-height: 38px;
@@ -193,7 +209,7 @@ nav>div>a:hover {
 .achievements {
     display: flex;
     width: 45%;
-    min-width: 500px;
+    min-width: 460px;
     margin-bottom: 30px;
 }
 
@@ -353,16 +369,15 @@ hr {
 .card>h4 {
     margin-bottom: 5%;
 }
+
+/* тут можно выделить только отличия этих ссылок */
 .card>a {
-    text-decoration: none;
     color: #4c62df;
-    margin-top: 5%;
+    margin: 5% 0;
 }
+
 .card>a:hover {
     color: #8a070e;
-    text-decoration: underline;
-    font-size: 24px;
-    transition: 0.5;
 }
 
 .action {
@@ -407,6 +422,7 @@ textarea {
     width: 50%;
     height: 50px;
     cursor: pointer;
+    transition: .5s;
 }
 .submit:hover {
     background-color: #08578f;
@@ -579,8 +595,6 @@ footer {
 
     .menu {
         width: 100%;
-        display: flex;
-        flex-direction: column;
         gap: 15px;
         background-color: #eedfd1e6;
         margin: 20px 0;
@@ -588,6 +602,11 @@ footer {
         height: 0;
         overflow: hidden;
         transition: height 0.3s;
+    }
+
+    .menu>div {
+        flex-direction: column;
+        align-items: center;
     }
 
     .menu-icon {
@@ -611,10 +630,16 @@ footer {
 
     .main_text h2,
     .main_text b,
-    .main_text P {
+    .main_text p {
         font-size: 24px;
         text-align: center;
         padding: 0 40px;
+    }
+
+    /* на мой взгляд лучше поменьше сделать, так как заголовок на фоне екста не выделяется, но смотрите сами */
+    .main_text>p {
+        font-size: 18px;
+        line-height: 20px;
     }
 
     form {
@@ -662,6 +687,7 @@ footer {
         row-gap: 10px;
         font-size: 16px;
     }
+
     .icons-about {
         width: 10%;
         height: 10%;
